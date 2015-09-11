@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adapter>
+	<name>Sample-Java</name>
+	<type>Java</type>
+	<class>ch01.team.MainClass</class>
+		<operations>
+			<operation>
+				<method-name>main</method-name>
+				<input-type>none</input-type>
+				<input-datatype>
+				</input-datatype>
+				<return-type>complex</return-type>
+				<return-datatype>map</return-datatype>
+			</operation>
+			<operation>
+				<method-name>display</method-name>
+				<input-type>simple</input-type>
+				<input-datatype>
+					<parameter>String</parameter>
+					<parameter>int</parameter>
+				</input-datatype>
+				<return-type>simple</return-type>
+				<return-datatype>String</return-datatype>
+			</operation>
+			<operation>
+				<method-name>getStudentDetails</method-name>
+				<input-type>none</input-type>
+				<input-datatype>
+					
+				</input-datatype>
+				<return-type>complex</return-type>
+				<return-datatype>VO</return-datatype>
+			</operation>
+			<operation>
+				<method-name>displayVO</method-name>
+				<input-type>complex</input-type>
+				<input-datatype>
+					<parameter>com.hex.reflection.StudentVO</parameter>
+				</input-datatype>
+				<return-type>simple</return-type>
+				<return-datatype>String</return-datatype>
+			</operation>
+		</operations>
+</adapter>

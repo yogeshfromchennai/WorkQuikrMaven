@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adapter>
+	<name></name>
+	<type>Sql</type>
+	<database-jndi></database-jndi>
+		<operations>
+			<operation>
+			<name>getAt</name>
+			<operation-type>select</operation-type>
+			<query>select * from student_record where idstudent_record=?</query>
+			</operation>
+		</operations>
+</adapter>

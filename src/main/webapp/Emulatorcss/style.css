@@ -1,0 +1,53 @@
+#portrait-top {
+	margin: 0px;
+}
+
+#portrait-bottom {
+	margin: 0px;
+}
+
+#portrait-left {
+	margin-top: -5px;
+	margin-bottom: -5px;
+	float: left;
+}
+
+#portrait-right {
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+#portrait-browser {
+	margin-top: -0px;
+	margin-bottom: -5px;
+	float: left;
+}
+
+#landscape-top {
+	margin: 0px;
+	float: left;
+}
+
+#landscape-bottom {
+	margin-left: 7px;
+	margin: 0px;
+	float: left;
+}
+
+#landscape-left {
+	margin-left: -1px;
+}
+
+#landscape-right {
+	margin-top: 1px;
+	margin-left: -1px;
+}
+
+#landscape-browser {
+	margin-left: -1px;
+	margin-top: -5px;
+}
+
+#landscape-middle {
+	float: left;
+}

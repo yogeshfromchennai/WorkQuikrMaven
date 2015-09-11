@@ -1,0 +1,33 @@
+<adapter>
+	<type>Sql</type>
+	
+	<procedure>
+		<name>getAll</name>
+		<method>post</method>
+		<execute>select</execute>
+		<query>select * from workquickr_deployer</query>
+	</procedure>
+	
+
+	<procedure>
+		<name>getAt</name>
+		<method>post</method>
+		<execute>select</execute>
+		<query>select * from workquickr_deployer where id=?</query>		
+	</procedure>
+		
+	<procedure>
+		<name>updateAt</name>
+		<method>post</method>
+		<execute>update</execute>
+		<query>update workquickr_deployer set context=? where id=?</query>		
+	</procedure>
+	
+	<procedure>
+		<name>insertStudent</name>
+		<method>post</method>
+		<execute>update</execute>
+		<query>INSERT INTO student_record (sname, scontact) VALUES (?, ?)</query>		
+	</procedure>
+	
+</adapter>

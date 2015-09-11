@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adapter>
+	<name></name>
+	<type></type>
+	<database-jndi></database-jndi>
+		<operations>
+			<operation>
+			<name>get-all</name>
+			<operation-type>read</operation-type>
+			<query>select * from workquickr_deployer</query>
+			</operation>
+		</operations>
+</adapter>

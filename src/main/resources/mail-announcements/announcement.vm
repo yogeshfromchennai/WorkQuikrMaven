@@ -1,0 +1,16 @@
+The ${developmentTeam} is pleased to announce the ${finalName} release!
+
+The release has been uploaded to the source repository management system
+
+${introduction}
+
+Visit the URL below for reports
+
+http://172.25.108.49:9000/BuildFaces
+
+#if ($urlDownload)
+
+#end
+
+Hexaware Technologies
+-${developmentTeam}

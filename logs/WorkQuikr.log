@@ -1,0 +1,87 @@
+2012-10-05 12:59:03,276 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:59:03,323 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:59:03,323 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:59:03,323 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:59:03,323 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:59:03,370 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:59:03,370 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-17 10:52:14,893 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-17 10:52:14,908 INFO main [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-17 10:52:15,877 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-17 10:52:15,877 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-17 10:52:15,877 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-17 10:52:15,893 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-17 10:52:16,143 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-17 10:52:18,518 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-17 10:52:18,518 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-17 10:52:18,518 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-17 10:52:18,518 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-17 10:52:18,518 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-17 11:11:36,714 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-17 11:11:36,714 INFO main [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-17 11:11:36,917 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-17 11:11:36,932 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-17 11:11:36,932 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-17 11:11:36,932 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-17 11:11:37,089 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-17 11:11:39,448 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-17 11:11:39,448 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-17 11:11:39,448 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-17 11:11:39,448 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-17 11:11:39,448 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-17 11:23:29,553 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-17 11:23:29,553 INFO main [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-17 11:23:29,771 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-17 11:23:29,771 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-17 11:23:29,771 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-17 11:23:29,771 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-17 11:23:29,928 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-17 11:23:32,287 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-17 11:23:32,287 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-17 11:23:32,287 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-17 11:23:32,287 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-17 11:23:32,303 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-17 11:29:31,254 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-17 11:29:31,254 INFO main [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-17 11:29:31,472 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-17 11:29:31,472 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-17 11:29:31,472 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-17 11:29:31,472 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-17 11:29:31,629 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-17 11:29:33,988 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-17 11:29:33,988 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-17 11:29:33,988 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-17 11:29:33,988 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-17 11:29:33,988 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-23 10:20:55,245 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-23 10:20:55,261 INFO main [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-23 10:20:55,667 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-23 10:20:55,667 INFO main [com.hexaware.mobileapp.console.AndroidPushService] - <>
+2012-10-23 10:20:55,667 INFO main [com.hexaware.mobileapp.console.AndroidPushService] - <>
+2012-10-23 10:20:55,683 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-23 10:20:55,870 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-23 10:20:58,245 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-23 10:20:58,245 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-23 10:20:58,245 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-23 10:20:58,245 INFO main [com.hexaware.mobileapp.console.AndroidPushService] - <Server Token from c2dm : null>
+2012-10-23 10:20:58,245 INFO main [com.hexaware.mobileapp.console.AndroidPushService] - <Registration is not completed.>
+2012-10-23 10:21:32,167 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-23 10:21:32,167 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-23 10:21:32,261 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-23 10:21:32,261 INFO http-8080-1 [com.hexaware.mobileapp.console.helpers.DatabaseHelper] - <getDeployedAppList method ends>
+2012-10-23 10:21:32,261 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-23 10:21:32,261 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-23 10:21:32,355 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-23 10:21:32,355 INFO http-8080-1 [com.hexaware.mobileapp.console.helpers.DatabaseHelper] - <getadapterDetails  : []>
+2012-10-26 15:53:17,794 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-26 15:53:17,809 INFO main [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-26 15:53:18,137 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-26 15:53:18,137 INFO main [com.hexaware.mobileapp.console.AndroidPushService] - <>
+2012-10-26 15:53:18,137 INFO main [com.hexaware.mobileapp.console.AndroidPushService] - <>
+2012-10-26 15:53:18,215 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-26 15:53:18,419 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-26 15:53:20,778 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-26 15:53:20,778 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-26 15:53:20,778 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-26 15:53:20,778 INFO main [com.hexaware.mobileapp.console.AndroidPushService] - <Server Token from c2dm : null>
+2012-10-26 15:53:20,778 INFO main [com.hexaware.mobileapp.console.AndroidPushService] - <Registration is not completed.>

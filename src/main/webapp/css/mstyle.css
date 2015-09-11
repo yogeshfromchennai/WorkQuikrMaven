@@ -1,0 +1,146 @@
+body{
+	MARGIN:auto; 
+	 font-family:Arial, Helvetica, sans-serif;
+/* 	 padding:0; */
+/* 	MARGIN: 0; */
+/* 	background-color:#1d2b57; */
+}
+.mtopheader {
+   width:100%; 
+    height:6px;
+	background-color:#f2ad18;
+
+}
+
+#mheader {
+ background: red; 
+ height:50px;
+  background-color:#1d2b57;
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-bottom:3px solid #f2ad18;
+}
+
+.mcontainerk{
+	 margin:auto;
+  width: 100%;
+/*   height:90%;  */
+  background: #1d2b57;
+	}
+	
+ .mlogin-container-box{
+  margin:auto;
+  width: 80%;
+  height:50%; 
+/*   background:#1d2b57; */
+ }	
+	
+  .login-containerl{
+  margin:auto;
+  width: 100%;
+  height:90%; 
+  background:#1d2b57;
+ } 
+ .mlogo-align{
+	float:right;
+	height:30px;
+	
+}
+
+.mlogo{
+	width:81px;
+	height:50px;
+}
+
+.logout a{
+	color:black;float:right;font-family: Helvetica;font-size: 12px;border-top: 1px;font-weight: bold;
+	 -moz-border-radius: 20px 20px;
+    -webkit-border-radius: 20px 20px;
+    -khtml-border-radius: 20px 20px;
+    border-radius: 20px 20px;
+}
+.logout a:hover{
+	color: #f37e20;
+	text-decoration: underline;  
+}
+.mfieldset{
+	border-width:3px;
+}
+
+
+
+.mfooter {
+	border-top:3px solid #f2ad18;
+	background: 			#1c2a54 /*{a-bar-background-color}*/;
+	color: 				white /*{a-bar-color}*/;
+	font-weight: bold;
+	padding-top:10px;
+	height:30px;
+	font-size: 10px;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ -1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ #000000 /*{a-bar-shadow-color}*/;
+	position: relative;
+	clear:both;
+	width: 100%;
+	position:absolute;
+   bottom:0;
+}
+
+.login-footer {
+	 
+   position:absolute;
+   bottom:0;
+  clear:both;
+   width:100%;
+   height:30px;
+  
+
+}
+.roundborder{
+	width: 170px;height:21px;
+	 -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+.roundbtn{
+	width: 80px;height:27px;
+	background: transparent;
+	 -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.fieldsetk{
+	border: 2px solid #333;
+}
+
+.checktableStyle{
+	border-collapse:collapse;
+	width:100%;
+margin: auto;
+	}
+.checktableStyle th{
+	color:white;
+	 background-color:#1d2b57;
+	}
+	.legend {
+  padding: 0.2em 0.5em;
+  -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+  color:white;
+  font-size:90%;
+  border-width:1px;
+  background-color: #1d2b57;
+  
+  
+/*   text-align:right; */
+  }
+	
+.borderline{
+	border-bottom: 1px solid #bdbdbd;
+	}

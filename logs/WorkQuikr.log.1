@@ -1,0 +1,573 @@
+2012-10-04 20:00:04,336 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeUpdateQuery Method Start>
+2012-10-04 20:00:04,336 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery  Delete from app_master where app_name='WorkQ-web';>
+2012-10-04 20:00:04,367 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeUpdateQuery successfully executed>
+2012-10-04 20:00:04,367 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeUpdateQuery successfully End>
+2012-10-04 20:00:04,367 INFO http-8080-3 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <Deleted from master Table1>
+2012-10-04 20:00:04,367 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:00:04,367 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-04 20:00:04,445 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:00:04,445 INFO http-8080-3 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-04 20:00:04,445 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:00:04,445 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-04 20:00:04,492 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:00:04,492 INFO http-8080-3 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : [com.hexaware.workquikr.console.vo.AdapterVo@185c0de]>
+2012-10-04 20:00:04,492 INFO http-8080-3 [com.hexaware.workquikr.console.action.Undeploy] - <******************* Do post Ends*************************>
+2012-10-04 20:00:09,898 INFO http-8080-3 [com.hexaware.workquikr.console.action.Undeploy] - <******************* Do post Starts*************************>
+2012-10-04 20:00:09,898 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeUpdateQuery Method Start>
+2012-10-04 20:00:09,898 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery DELETE FROM adapters WHERE adapter_loc=?>
+2012-10-04 20:00:09,930 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeUpdateQuery successfully executed>
+2012-10-04 20:00:09,930 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeUpdateQuery successfully End>
+2012-10-04 20:00:09,930 INFO http-8080-3 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <Delete undeployed Apps called 1>
+2012-10-04 20:00:09,930 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:00:09,930 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-04 20:00:10,039 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:00:10,039 INFO http-8080-3 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-04 20:00:10,039 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:00:10,039 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-04 20:00:10,195 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:00:10,195 INFO http-8080-3 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-04 20:00:10,195 INFO http-8080-3 [com.hexaware.workquikr.console.action.Undeploy] - <******************* Do post Ends*************************>
+2012-10-04 20:00:11,320 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:00:11,320 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-04 20:00:11,398 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:00:11,398 INFO http-8080-3 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-04 20:00:11,398 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:00:11,398 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-04 20:00:11,476 INFO http-8080-3 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:00:11,476 INFO http-8080-3 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-04 20:07:51,752 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:07:51,752 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-04 20:07:51,814 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:07:51,814 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-04 20:07:51,814 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:07:51,814 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-04 20:07:51,892 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:07:51,892 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-04 20:07:55,924 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:07:55,924 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select a.id,a.device_token,b.app_name,a.user_id from app_master b,notification a where a.app_id=b.app_id;>
+2012-10-04 20:07:55,955 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:07:55,955 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.NotificationDaoImpl] - <getadapterDetails  : []>
+2012-10-04 20:07:56,721 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:07:56,721 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-04 20:07:56,767 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:07:56,767 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-04 20:07:57,892 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:07:57,892 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-04 20:07:57,955 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:07:57,955 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-04 20:07:57,955 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-04 20:07:57,955 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-04 20:07:58,017 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-04 20:07:58,017 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 10:17:10,190 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 10:17:10,205 INFO main [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 10:17:11,486 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 10:17:11,486 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 10:17:11,486 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 10:17:11,486 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 10:17:11,893 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 10:17:14,361 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 10:17:14,361 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 10:17:14,361 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 10:17:14,361 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 10:17:14,361 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 10:25:02,700 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 10:25:02,700 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 10:25:02,731 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 10:25:02,731 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 10:25:02,731 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 10:25:03,325 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 10:25:03,622 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 11:14:12,511 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:14:12,511 INFO main [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 11:14:12,699 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:14:12,699 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:14:12,699 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:14:12,699 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 11:14:12,855 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 11:14:15,215 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 11:14:15,215 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 11:14:15,215 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 11:14:15,230 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 11:14:15,230 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 11:16:27,846 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:16:27,846 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 11:16:27,893 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:16:27,893 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:16:27,893 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:16:27,909 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 11:16:27,987 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 11:16:30,378 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 11:16:30,378 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 11:16:30,393 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 11:16:30,393 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 11:16:30,393 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 11:17:10,567 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:17:10,567 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:17:10,661 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:17:10,661 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:17:10,661 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:17:10,661 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:17:10,755 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:17:10,755 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:17:35,068 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:17:35,068 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 11:17:35,318 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:17:35,318 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:17:35,318 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:17:35,350 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 11:17:35,443 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 11:17:37,772 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 11:17:37,772 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 11:17:37,772 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 11:17:37,772 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 11:17:37,772 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 11:18:33,976 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:18:33,976 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:18:34,038 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:18:34,038 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:18:34,038 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:18:34,038 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:18:34,101 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:18:34,101 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:19:00,429 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:19:00,429 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:19:00,476 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:19:00,476 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:19:00,476 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:19:00,476 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:19:00,523 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:19:00,523 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:19:02,648 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:19:02,648 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:19:02,695 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:19:02,695 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:19:03,633 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:19:03,633 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select a.id,a.device_token,a.date,b.app_name,a.user_id from app_master b,notification a where a.app_id=b.app_id;>
+2012-10-05 11:19:03,664 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:19:03,664 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.NotificationDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:19:16,039 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:19:16,039 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:19:16,086 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:19:16,086 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:21:34,511 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:21:34,526 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 11:21:34,557 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:21:34,573 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:21:34,573 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:21:34,589 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 11:21:34,667 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 11:21:37,058 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 11:21:37,058 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 11:21:37,073 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 11:21:37,073 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 11:21:37,073 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 11:22:00,745 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:00,745 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:22:00,777 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:00,777 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:22:00,777 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:00,777 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:22:00,870 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:00,870 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:22:06,386 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:06,386 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:22:06,417 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:06,433 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:22:07,136 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:07,136 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:22:07,199 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:07,199 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:22:07,199 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:07,199 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:22:07,246 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:07,246 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:22:08,230 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:08,230 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select a.id,a.device_token,a.date,b.app_name,a.user_id from app_master b,notification a where a.app_id=b.app_id;>
+2012-10-05 11:22:08,261 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:08,261 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.NotificationDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:22:08,902 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:08,902 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:22:08,933 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:08,933 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:22:09,761 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:09,761 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:22:09,824 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:09,824 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:22:09,824 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:09,824 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:22:09,933 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:09,933 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:22:12,824 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:12,824 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select a.id,a.device_token,a.date,b.app_name,a.user_id from app_master b,notification a where a.app_id=b.app_id;>
+2012-10-05 11:22:12,871 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:12,871 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.NotificationDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:22:15,589 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:15,589 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:22:15,636 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:15,636 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:22:16,402 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:16,402 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:22:16,465 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:16,465 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:22:16,465 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:22:16,465 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:22:16,527 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:22:16,527 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:23:35,512 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:23:35,512 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:23:35,559 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:23:35,559 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:23:36,293 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:23:36,293 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:23:36,340 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:23:36,340 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:23:36,340 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:23:36,340 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:23:36,387 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:23:36,387 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:23:40,293 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:23:40,293 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:23:40,356 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:23:40,356 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:23:42,043 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:23:42,043 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:23:42,090 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:23:42,090 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:23:42,090 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:23:42,090 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:23:42,153 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:23:42,153 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:23:42,981 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:23:42,981 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:23:43,028 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:23:43,028 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:23:43,481 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:23:43,481 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:23:43,528 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:23:43,528 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:23:43,528 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:23:43,528 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:23:43,559 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:23:43,559 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:25:14,153 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:25:14,153 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 11:25:14,200 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:25:14,200 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:25:14,200 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:25:14,216 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 11:25:14,294 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 11:25:16,685 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 11:25:16,700 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 11:25:16,700 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 11:25:16,700 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 11:25:16,700 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 11:26:10,966 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:26:10,966 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 11:26:10,997 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:26:10,997 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:26:10,997 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 11:26:11,013 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 11:26:11,091 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 11:26:13,482 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 11:26:13,497 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 11:26:13,497 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 11:26:13,497 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 11:26:13,497 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 11:32:18,681 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:18,681 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:32:18,743 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:18,743 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:32:18,743 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:18,743 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:32:18,790 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:18,790 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:32:20,462 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:20,462 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:32:20,509 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:20,509 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:32:21,415 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:21,415 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:32:21,462 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:21,462 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:32:21,462 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:21,462 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:32:21,509 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:21,509 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:32:21,915 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:21,915 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:32:21,946 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:21,946 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:32:22,743 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:22,743 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select a.id,a.device_token,a.date,b.app_name,a.user_id from app_master b,notification a where a.app_id=b.app_id;>
+2012-10-05 11:32:22,806 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:22,806 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.NotificationDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:32:37,711 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:37,711 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:32:37,743 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:37,743 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:32:38,258 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:38,258 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:32:38,290 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:38,290 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:32:38,290 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:38,290 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:32:38,352 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:38,352 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:32:48,430 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:48,430 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:32:48,477 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:48,477 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:32:48,914 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:48,914 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:32:48,961 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:48,961 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:32:48,961 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:48,961 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:32:49,055 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:49,055 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:32:58,273 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:58,273 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:32:58,320 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:58,320 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:32:58,320 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:32:58,320 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:32:58,351 INFO http-8080-5 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:32:58,351 INFO http-8080-5 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:33:14,695 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:33:14,695 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:33:14,742 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:33:14,742 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:33:14,742 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:33:14,742 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:33:14,773 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:33:14,773 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:33:21,648 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:33:21,648 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:33:21,710 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:33:21,710 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:33:21,710 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:33:21,710 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:33:21,757 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:33:21,757 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:34:02,115 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:34:02,115 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:34:02,162 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:34:02,162 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:34:02,162 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:34:02,162 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:34:02,209 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:34:02,209 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:34:05,802 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:34:05,802 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:34:05,849 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:34:05,849 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:34:06,474 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:34:06,474 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select a.id,a.device_token,a.date,b.app_name,a.user_id from app_master b,notification a where a.app_id=b.app_id;>
+2012-10-05 11:34:06,521 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:34:06,521 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.NotificationDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:34:07,287 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:34:07,287 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:34:07,334 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:34:07,334 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:34:07,334 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:34:07,334 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 11:34:07,396 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:34:07,396 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 11:34:20,489 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:34:20,489 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 11:34:20,536 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:34:20,536 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 11:34:21,646 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 11:34:21,646 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select a.id,a.device_token,a.date,b.app_name,a.user_id from app_master b,notification a where a.app_id=b.app_id;>
+2012-10-05 11:34:21,708 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 11:34:21,708 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.NotificationDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:30:29,882 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:30:29,882 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:30:29,960 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:30:29,960 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:30:29,960 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:30:29,960 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:30:30,069 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:30:30,069 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:34:09,366 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:34:09,366 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:34:09,413 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:34:09,413 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:34:09,413 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:34:09,413 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:34:09,475 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:34:09,475 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:35:03,194 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:35:03,194 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:35:03,257 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:35:03,257 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:35:03,257 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:35:03,257 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:35:03,304 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:35:03,304 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:35:09,647 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:35:09,647 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:35:09,710 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:35:09,710 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:35:09,710 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:35:09,710 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:35:09,772 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:35:09,772 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:38:27,007 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:38:27,007 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:38:27,070 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:38:27,070 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:38:27,070 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:38:27,070 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:38:27,132 INFO http-8080-6 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:38:27,132 INFO http-8080-6 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:45:16,151 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:45:16,151 INFO main [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 12:45:16,370 INFO main [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:45:16,370 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:45:16,370 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:45:16,370 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 12:45:16,526 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 12:45:18,886 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 12:45:18,886 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 12:45:18,886 INFO main [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 12:45:18,901 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 12:45:18,901 INFO main [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 12:46:13,026 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:46:13,026 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 12:46:13,073 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:46:13,073 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:46:13,073 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:46:13,089 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 12:46:13,167 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 12:46:15,573 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 12:46:15,573 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 12:46:15,573 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 12:46:15,573 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 12:46:15,589 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 12:47:18,323 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:47:18,323 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 12:47:18,354 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:47:18,354 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:47:18,370 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:47:18,370 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 12:47:18,448 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 12:47:20,854 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 12:47:20,854 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 12:47:20,854 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 12:47:20,870 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 12:47:20,870 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 12:50:36,136 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:50:36,136 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 12:50:36,182 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:50:36,198 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:50:36,198 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:50:36,198 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 12:50:36,276 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 12:50:38,604 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 12:50:38,604 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 12:50:38,604 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 12:50:38,604 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 12:50:38,604 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 12:50:52,432 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:50:52,448 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 12:50:52,495 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:50:52,495 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:50:52,495 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:50:52,511 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 12:50:52,589 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 12:50:54,979 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 12:50:54,979 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 12:50:54,995 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 12:50:54,995 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 12:50:54,995 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 12:54:00,589 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:54:00,589 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 12:54:00,667 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:54:00,667 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:54:00,667 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:54:00,682 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 12:54:00,761 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 12:54:03,167 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 12:54:03,167 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 12:54:03,167 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 12:54:03,167 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 12:54:03,167 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 12:56:12,339 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:56:12,339 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select server_token from notification_settings >
+2012-10-05 12:56:12,386 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:56:12,386 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:56:12,386 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <>
+2012-10-05 12:56:12,401 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Starts****************************>
+2012-10-05 12:56:12,464 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <authication begins...>
+2012-10-05 12:56:14,807 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <Server registration is failed. Message : www.google.com>
+2012-10-05 12:56:14,807 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <In setAuthCode AUTH_CODE generated is null>
+2012-10-05 12:56:14,807 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.c2dm.utils.AuthenticationUtils] - <*************************** getAuthCode Ends****************************>
+2012-10-05 12:56:14,807 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Server Token from c2dm : null>
+2012-10-05 12:56:14,807 INFO ContainerBackgroundProcessor[StandardEngine[Catalina]] [com.hexaware.workquikr.console.action.PushNotificationService] - <Registration is not completed.>
+2012-10-05 12:56:55,620 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:56:55,620 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:56:55,651 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:56:55,651 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:56:55,651 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:56:55,651 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:56:55,745 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:56:55,745 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:56:58,682 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:56:58,682 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:56:58,761 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:56:58,761 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:56:59,448 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:56:59,448 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:56:59,511 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:56:59,511 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:56:59,511 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:56:59,511 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:56:59,557 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:56:59,557 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:57:00,526 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:57:00,526 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select a.id,a.device_token,a.date,b.app_name,a.user_id from app_master b,notification a where a.app_id=b.app_id;>
+2012-10-05 12:57:00,589 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:57:00,589 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.NotificationDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:57:01,386 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:57:01,386 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:57:01,432 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:57:01,432 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:57:01,901 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:57:01,901 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:57:01,964 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:57:01,964 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:57:01,964 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:57:01,964 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:57:02,026 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:57:02,026 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:57:03,495 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:57:03,495 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:57:03,526 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:57:03,526 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:58:55,807 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:58:55,807 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:58:55,854 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:58:55,854 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:58:55,854 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:58:55,854 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:58:55,886 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:58:55,886 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:58:58,370 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:58:58,370 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:58:58,417 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:58:58,417 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:58:59,698 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:58:59,698 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:58:59,729 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:58:59,729 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:58:59,729 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:58:59,745 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery SELECT adapter_id, adapter_name, adapter_loc, deployed_date, adapter_type, max(version) from adapters group by adapter_name order by adapter_type;>
+2012-10-05 12:58:59,807 INFO http-8080-1 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:58:59,807 INFO http-8080-1 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getadapterDetails  : []>
+2012-10-05 12:59:01,432 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>
+2012-10-05 12:59:01,432 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <SqlQuery select app_master.app_id,app_master.app_name,app_slave.web_id,app_slave.app_source,app_slave.version,app_slave.deployed_date,app_environment.device_type from app_master,app_slave,app_environment where app_master.app_id=app_slave.app_id and app_slave.web_id=app_environment.web_id order by  app_master.app_id,app_slave.web_id,app_environment.device_type ;>
+2012-10-05 12:59:01,526 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method End>
+2012-10-05 12:59:01,526 INFO http-8080-2 [com.hexaware.workquikr.console.persistance.impl.CatalogDaoImpl] - <getDeployedAppList method ends>
+2012-10-05 12:59:03,245 INFO http-8080-2 [com.hexaware.framework.dao.QueryProcessor] - <executeSelectQuery Method Start>

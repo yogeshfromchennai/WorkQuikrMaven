@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adapter>
+                <name></name>
+                <type>Xml</type>
+                <operations>
+                      <operation>
+                             <operation-type>read</operation-type>
+                             <file-path>/Adapters/Xml/Sample-Xml.xml</file-path>
+                      </operation>
+                </operations>
+</adapter>
+

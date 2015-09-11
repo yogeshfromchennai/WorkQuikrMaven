@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>workQuickr-web-console</display-name>
+	<icon>
+		<large-icon>logo_light_tagline_medium_transparentbg.png</large-icon>
+		<!-- <small-icon>logo_light_tagline_medium_transparentbg.png</small-icon> -->
+	</icon>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>		
+	</welcome-file-list>
+
+	<servlet>
+		<description></description>
+		<display-name>UploadFile</display-name>
+		<servlet-name>UploadFile</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.action.UploadFile</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>AuthenticationService</display-name>
+		<servlet-name>AuthenticationService</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.AuthenticationService</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description></description>
+		<display-name>Undeploy</display-name>
+		<servlet-name>Undeploy</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.action.Undeploy</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>
+  	</description>
+		<display-name>SQLInvoker</display-name>
+		<servlet-name>SQLInvoker</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.SQLInvoker</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+  	</description>
+		<display-name>JavaInvoker</display-name>
+		<servlet-name>JavaInvoker</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.JavaInvoker</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>PushNotificationService</display-name>
+		<servlet-name>PushNotificationService</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.action.PushNotificationService</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<description>
+  	</description>
+		<display-name>XMLAdapter</display-name>
+		<servlet-name>XMLAdapter</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.XMLAdapter</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+  	</description>
+		<display-name>UploadImage</display-name>
+		<servlet-name>UploadImage</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.UploadImage</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>
+  	</description>
+		<display-name>WsInvoker</display-name>
+		<servlet-name>WsInvoker</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.WsInvoker</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<description>
+  	</description>
+		<display-name>RegisterAndPull</display-name>
+		<servlet-name>RegisterAndPull</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.RegisterAndPull</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>HomeServlet</display-name>
+		<servlet-name>HomeServlet</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.action.HomeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AppRepositoryServlet</display-name>
+		<servlet-name>AppRepositoryServlet</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.action.AppRepositoryServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AppDownload</display-name>
+		<servlet-name>AppDownload</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.action.AppDownload</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>RemoteDisableCheck</display-name>
+		<servlet-name>RemoteDisableCheck</servlet-name>
+		<servlet-class>com.hexaware.workquikr.console.RemoteDisableCheck</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Undeploy</servlet-name>
+		<url-pattern>/Pages/Undeploy</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadFile</servlet-name>
+		<url-pattern>/Pages/UploadFile</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JavaInvoker</servlet-name>
+		<url-pattern>/JavaInvoker</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SQLInvoker</servlet-name>
+		<url-pattern>/SQLInvoker</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AuthenticationService</servlet-name>
+		<url-pattern>/AuthenticationService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PushNotificationService</servlet-name>
+		<url-pattern>/Pages/notify</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>XMLAdapter</servlet-name>
+		<url-pattern>/XMLAdapter</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadImage</servlet-name>
+		<url-pattern>/UploadImage</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>WsInvoker</servlet-name>
+		<url-pattern>/WsInvoker</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>RegisterAndPull</servlet-name>
+		<url-pattern>/RegisterAndPull</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HomeServlet</servlet-name>
+		<url-pattern>/Pages/Home</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AppRepositoryServlet</servlet-name>
+		<url-pattern>/AppRepository</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AppDownload</servlet-name>
+		<url-pattern>/Pages/Download</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RemoteDisableCheck</servlet-name>
+		<url-pattern>/RemoteDisableCheck</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Define reference to the user database for looking up roles -->
+	<resource-env-ref>
+	<description>
+      Link to the UserDatabase instance from which we request lists of
+      defined role names.  Typically, this will be connected to the global
+      user database with a ResourceLink element in server.xml or the context
+      configuration file for the Manager web application.
+    </description>
+		<resource-env-ref-name>users</resource-env-ref-name>
+		<resource-env-ref-type>org.apache.catalina.UserDatabase</resource-env-ref-type>
+	</resource-env-ref>
+
+	<!-- Define a Security Constraint on this Application -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>HTMLManger and Manager command</web-resource-name>
+			<url-pattern>/Pages/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<!-- NOTE: This role is not present in the default users file -->
+			<role-name>manager</role-name>
+			<role-name>general</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<!-- Define the Login Configuration for this Application -->
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<realm-name>Tomcat Manager Application</realm-name>
+		<form-login-config>
+			<form-login-page>/Login.jsp</form-login-page>
+			<form-error-page>/Login.jsp?fail=The username or password you entered is incorrect.</form-error-page>
+		</form-login-config>
+	</login-config>
+
+	<!-- Security roles referenced by this web application -->
+	<security-role>
+		<description>
+      The role that is required to log in to the Manager Application
+    </description>
+		<role-name>manager</role-name>
+	</security-role>
+	<security-role>
+		<description>
+      The role that is required to log in to the General Application
+    </description>
+		<role-name>general</role-name>
+	</security-role>
+</web-app>

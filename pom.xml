@@ -6,7 +6,7 @@
   <groupId>com.hexaware.WorkQuikr</groupId>
   <artifactId>WorkQuikr-console</artifactId>
   <packaging>war</packaging>
-  <version>3.0</version>
+  <version>3.1</version>
   <name>WorkQuikr-console</name>        
   <url>http://172.25.108.50:8081/artifactory/repo</url>
    
@@ -19,12 +19,16 @@
     </developer>   
 </developers>
 
-<scm>         
-    <connection>scm:git:git://github.com/yogeshfromchennai/WorkQuikrMaven.git</connection>
-    <developerConnection>scm:git:[fetch=]https://github.com/yogeshfromchennai/WorkQuikrMaven[push=]https://github.com/yogeshfromchennai/WorkQuikrMaven</developerConnection>
-	<url>https://github.com/yogeshfromchennai/WorkQuikrMaven</url>
-  </scm>
+<scm>     
+<url>https://github.com/yogeshfromchennai/WorkQuikrMaven</url>    
+    <connection>scm:git:https://github.com/yogeshfromchennai/WorkQuikrMaven.git</connection>
+    <developerConnection>scm:git:git@github.com:yogeshfromchennai/WorkQuikrMaven.git</developerConnection>
+    
+	  </scm>
+
+
   
+ 
 	<!--<dependency>
       <groupId>org.apache.activemq</groupId>
       <artifactId>activemq-all</artifactId>
@@ -483,23 +487,11 @@
 	<plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-scm-plugin</artifactId>
-        <version>1.8</version>
-		<configuration>
-		
-			<checkoutDirectory>${basedir}</checkoutDirectory>
-			<!--<skipCheckoutIfExists>true</skipCheckoutIfExists>-->
-		</configuration>
-				<executions>
-					<execution>
-						<id>perform-checkout</id>
-						
-					 <configuration>
-					
-					
-				     </configuration>
-					 </execution>
-				</executions>	
-       
+        <version>1.9.4</version>
+        <configuration>
+        
+		   <checkoutDirectory>D:/Yogesh/example/git</checkoutDirectory>
+                       </configuration>
       </plugin>
 
 

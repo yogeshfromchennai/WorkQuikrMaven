@@ -13,16 +13,16 @@
     
 <developers> 
      <developer> 
-      <id>test</id>  
+      <id>test</id>   
       <name>test</name>
       <email>test@hex.com</email>    
     </developer>   
 </developers>
 
 <scm>         
-    <connection>${connection.url}</connection>
-    <developerConnection>${developerconnection.url}</developerConnection>
-	<url>${url}</url>
+    <connection>scm:git:git://github.com/yogeshfromchennai/WorkQuikrMaven.git</connection>
+    <developerConnection>scm:git:[fetch=]https://github.com/yogeshfromchennai/WorkQuikrMaven[push=]https://github.com/yogeshfromchennai/WorkQuikrMaven</developerConnection>
+	<url>https://github.com/yogeshfromchennai/WorkQuikrMaven</url>
   </scm>
   
 	<!--<dependency>

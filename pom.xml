@@ -489,9 +489,19 @@
         <artifactId>maven-scm-plugin</artifactId>
         <version>1.9.4</version>
         <configuration>
-        
+        <checkoutDirectory>${basedir}</checkoutDirectory>
 		  
                        </configuration>
+					   <executions>
+					<execution>
+						<id>perform-checkout</id>
+						
+					 <configuration>
+					
+					
+				     </configuration>
+					 </execution>
+				</executions>	
       </plugin>
 
 

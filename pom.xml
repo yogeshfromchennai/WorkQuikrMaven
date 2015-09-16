@@ -19,7 +19,7 @@
     </developer>   
 </developers>           
 
-<scm>      
+<scm>       
 <url>https://github.com/yogeshfromchennai/WorkQuikrMaven</url>    
     <connection>scm:git:https://github.com/yogeshfromchennai/WorkQuikrMaven.git</connection>
     <developerConnection>scm:git:git@github.com:yogeshfromchennai/WorkQuikrMaven.git</developerConnection>

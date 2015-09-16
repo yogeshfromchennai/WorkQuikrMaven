@@ -490,7 +490,7 @@
         <version>1.9.4</version>
         <configuration>
         
-		   <checkoutDirectory>D:/Yogesh/example/git</checkoutDirectory>
+		  
                        </configuration>
       </plugin>
 

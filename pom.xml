@@ -496,7 +496,7 @@
         <artifactId>maven-scm-plugin</artifactId>
         <version>1.9.4</version>
         <configuration>
-        <checkoutDirectory>${basedir}</checkoutDirectory>
+        <checkoutDirectory>D:/yogesh2</checkoutDirectory>
 		  
                        </configuration>
 					   <executions>

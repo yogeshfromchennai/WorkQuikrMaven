@@ -11,13 +11,13 @@
   <url>http://172.25.108.50:8081/artifactory/repo</url>
    
     
-<developers>    
+<developers>   
      <developer>  
-      <id>test</id>     
+      <id>test</id>    
       <name>test</name>     
       <email>test@hex.com</email>      
     </developer>   
-</developers>  
+</developers> 
 
 <scm>      
 <url>https://github.com/yogeshfromchennai/WorkQuikrMaven</url>    

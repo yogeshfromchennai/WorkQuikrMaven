@@ -1,3 +1,0 @@
-# WorkQuikrMavend
-
-file added

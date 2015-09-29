@@ -6,7 +6,7 @@
   <groupId>com.hexaware.WorkQuikr</groupId>
   <artifactId>WorkQuikr-console</artifactId>
   <packaging>war</packaging>
-  <version>3.1</version>
+  <version>3.1</version>  
   <name>WorkQuikr-console</name>        
   <url>http://172.25.108.50:8081/artifactory/repo</url>
     
